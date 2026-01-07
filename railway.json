@@ -1,11 +1,14 @@
 {
   "build": {
-    "builder": "nixpacks",
-    "buildCommand": "npm install && npm run build"
+    "builder": "nixpacks"
   },
   "deploy": {
     "startCommand": "npm run start",
     "restartPolicyType": "on_failure",
     "restartPolicyMaxRetries": 5
+  },
+  "nixpacks": {
+    "providers": ["node"],
+    "nodeVersion": "20"
   }
 }
