@@ -10,8 +10,8 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "VocabAI – Nauka angielskiego z AI",
-  description: "Personalizowana nauka słownictwa z fiszkami, quizami i spaced repetition",
+  title: "FluentWords – Nauka angielskiego z AI",
+  description: "FluentWords - Personalizowana nauka słownictwa z fiszkami, quizami i spaced repetition",
 };
 
 export default function RootLayout({

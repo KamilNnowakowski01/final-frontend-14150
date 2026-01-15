@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 import { useAuth } from "@/context/auth-context";
 
 const navItems = [
-  { href: "/dashboard/guide", label: "Przewodnik", icon: Map },
+  { href: "/guide", label: "Przewodnik", icon: Map },
   { href: "/dashboard", label: "Pulpit", icon: LayoutDashboard },
   { href: "/dashboard/vocabulary", label: "Słownik", icon: BookOpen },
   { href: "/dashboard/flashcards/prepare", label: "Fiszki", icon: Brain },
@@ -35,8 +35,10 @@ export function SidebarContent() {
     <div className="flex flex-col h-full bg-background">
       <div className="p-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl text-indigo-900">
-          <span className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white text-sm">AI</span>
-          LinguaAI
+          <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center">
+            <Brain className="h-6 w-6 text-white" />
+          </div>
+          FluentWords
         </Link>
       </div>
 

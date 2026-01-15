@@ -1,12 +1,15 @@
 'use client';
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Brain, LayoutDashboard, LogOut, User } from "lucide-react";
 import { useAuth } from "@/context/auth-context";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const { user, logout } = useAuth();
+  const pathname = usePathname();
 
   return (
     <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
@@ -16,12 +19,27 @@ export function Header() {
             <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center">
               <Brain className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-bold text-indigo-900">LinguaAI</span>
+            <span className="text-xl font-bold text-indigo-900">FluentWords</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-foreground font-medium hover:text-indigo-600 transition">
-              Home
+            <Link 
+              href="/" 
+              className={cn(
+                "font-medium hover:text-indigo-600 transition",
+                pathname === "/" ? "text-indigo-600" : "text-muted-foreground"
+              )}
+            >
+              Strona Główna
+            </Link>
+            <Link 
+              href="/guide" 
+              className={cn(
+                "font-medium hover:text-indigo-600 transition",
+                pathname === "/guide" ? "text-indigo-600" : "text-muted-foreground"
+              )}
+            >
+              Przewodnik
             </Link>
             <Link href="/#about" className="text-muted-foreground hover:text-foreground transition">
               O nas

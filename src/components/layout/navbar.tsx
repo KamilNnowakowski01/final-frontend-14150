@@ -28,7 +28,7 @@ export function Navbar() {
         {/* Logo for mobile (hidden on desktop since sidebar has it) */}
         <Link href="/dashboard" className="flex md:hidden items-center gap-2 font-bold text-lg">
           <Brain className="h-6 w-6 text-indigo-600" />
-          <span>LinguaAI</span>
+          <span>FluentWords</span>
         </Link>
 
         <div className="flex-1" />

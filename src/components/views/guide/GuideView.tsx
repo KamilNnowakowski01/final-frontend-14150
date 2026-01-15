@@ -74,7 +74,7 @@ export function GuideView() {
               trudność.
             </p>
             <div className="flex justify-center gap-4 pt-4">
-              <Link href="/dashboard/flashcards">
+              <Link href="/dashboard">
                 <Button
                   size="lg"
                   className="h-12 px-8 text-lg gap-2 bg-indigo-600 hover:bg-indigo-700 shadow-xl shadow-indigo-200"
@@ -386,7 +386,7 @@ export function GuideView() {
               sobą i obserwuj jak rośnie Twój poziom zaawansowania.
             </p>
             <div className="flex justify-center gap-4 pt-4">
-              <Link href="/dashboard/quizzes">
+              <Link href="/dashboard">
                 <Button
                   size="lg"
                   className="h-12 px-8 text-lg gap-2 bg-pink-600 hover:bg-pink-700 shadow-xl shadow-pink-200"

@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/home/hero-section";
 import { FeaturesSection } from "@/components/home/features-section";
 import { AboutSection } from "@/components/home/about-section";
 import { ContactSection } from "@/components/home/contact-section";
-import { UserInfoSection } from "@/components/home/user-info-section";
 
 export default function HomePage() {
   return (
@@ -12,7 +11,6 @@ export default function HomePage() {
       <FeaturesSection />
       <AboutSection />
       <ContactSection />
-      <UserInfoSection />
     </>
   );
 }

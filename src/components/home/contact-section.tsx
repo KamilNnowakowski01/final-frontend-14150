@@ -10,17 +10,17 @@ export function ContactSection() {
           <Card className="p-6 text-center">
             <Mail className="h-10 w-10 text-indigo-600 mx-auto mb-3" />
             <h3 className="font-semibold">Email</h3>
-            <p className="text-muted-foreground">support@linguaai.pl</p>
+            <p className="text-muted-foreground">-</p>
           </Card>
           <Card className="p-6 text-center">
             <Phone className="h-10 w-10 text-green-600 mx-auto mb-3" />
             <h3 className="font-semibold">Telefon</h3>
-            <p className="text-muted-foreground">+48 123 456 789</p>
+            <p className="text-muted-foreground">-</p>
           </Card>
           <Card className="p-6 text-center">
             <MapPin className="h-10 w-10 text-purple-600 mx-auto mb-3" />
             <h3 className="font-semibold">Adres</h3>
-            <p className="text-muted-foreground">Warszawa, Polska</p>
+            <p className="text-muted-foreground">-</p>
           </Card>
         </div>
       </div>
